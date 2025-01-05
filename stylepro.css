@@ -271,19 +271,20 @@ span{
   margin-bottom: -50px;
 }
 .project .card{
-  margin-left: 17%;
+  margin-left: 15%;
   margin-top: 100px;
   background-color: black;
 }
 
 .project .card img{
  height: 236px;
- width: 260px;
- opacity: 0.8;
+ width: 300px;
+ opacity: 0.9;
+ border: 1px solid white;
 }
 
 .project .card-body{
-  border: 1px solid var(--bg-color);
+  border: 1px solid white;
   width: 700px;
 }
 
@@ -523,6 +524,7 @@ font-size: 25px;
 .icons{
 margin-left: 35%;
 }
+
 }
 
 
