@@ -363,6 +363,12 @@ main .intro{
   width: 700px;
   margin-top: 50px;
 }
+.intro .data {
+ text-align: center;
+}
+.intro button{
+  margin-left: 50%;
+}
 
 @keyframes moving{
   0%{
