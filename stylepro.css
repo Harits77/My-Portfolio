@@ -74,6 +74,7 @@ width: 100%;
 
 #btn:hover{
   scale: 1.1;
+  box-shadow:0 0 5px aqua;
 }
 
 .intro .data1 img{
