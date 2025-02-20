@@ -67,8 +67,11 @@
           where I can
           utilize my specific skills to contribute to the success of the company and further develop
           my career</p>
-        <a href="Hariharan MS.pdf"><button type="button" id="btn">Check Resume</button></a>
-
+        <div class="icons">
+          <a href="Hariharan MS.pdf"><button type="button" id="btn">Check Resume</button></a>
+          <a href="https://github.com/Harits77"><box-icon type='logo' name='github'></box-icon></a>
+          <a href="https://www.linkedin.com/in/ms-hariharan"><box-icon name='linkedin' type='logo'></box-icon></a>
+        </div>
       </div>
       <div class="data1">
         <img src="hari.png" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" alt="">
@@ -190,7 +193,7 @@
                 with basic cart management functionality.</p>
               <p class="card-text mt-4">Using : React js Tailwind css </p>
               <a href="https://github.com/Harits77/shopcart-react.git"> <button class="btn">Source Code</button></a>
-              <a href="https://shopcart-woad.vercel.app/"> <button class="btn">Live Demo</button></a>
+              <a href="https://shopcart-woad.vercel.app/"> <button class="btn ml-5">Live Demo</button></a>
             </div>
           </div>
         </div>
@@ -226,7 +229,8 @@
               <p class="card-text mt-4 ">A doctor-patient management system that handles user registration, login, and
                 displays personalized patient details, allowing doctors to manage patient information efficiently.</p>
               <p class="card-text mt-4">Using : MERN Stack</p>
-              <a href="https://github.com/Harits77/Healthlink-Pro-MERN-Project.git"><button class="btn">Source Code</button></a>
+              <a href="https://github.com/Harits77/Healthlink-Pro-MERN-Project.git"><button class="btn">Source
+                  Code</button></a>
             </div>
           </div>
         </div>
@@ -241,16 +245,16 @@
             <div class="card-body bg-black text-white rounded-end">
               <h4 class="card-title " id="title">Login Authentication System </h4>
               <p class="card-text mt-4">
-                Built a secure login system using the MERN stack with bcrypt for password hashing and MongoDB 
+                Built a secure login system using the MERN stack with bcrypt for password hashing and MongoDB
                 for user data storage, ensuring secure authentication.</p>
-              <p class="card-text mt-4">Using : MERN Stack</p>
-              <a href="https://github.com/Harits77/LoginForm-MERN.git"> <button class="btn">Source Code</button></a>
+              <p class="card-text mt-4">Using : MERN</p>
+              <a href="https://github.com/Harits77/QR-Code-Generator.git"> <button class="btn">Source Code</button></a>
             </div>
           </div>
         </div>
       </div>
 
-       <div class="card mb-5" style="width: 850px; height: 190px;">
+      <div class="card mb-5" style="width: 850px; height: 190px;">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="Project6.png" class="img-fluid rounded-start" alt="...">
@@ -261,24 +265,35 @@
               <p class="card-text mt-4">
                 CRUD operations in MERN manage data using Node.js, Express.js, and MongoDB for backend processing, while
                 React handles the frontend interactions via API calls.</p>
-              <p class="card-text mt-4">Using : MERN Stack</p>
+              <p class="card-text mt-4">Using : MERN</p>
               <a href="https://github.com/Harits77/CURD-MERN.git"> <button class="btn">Source Code</button></a>
             </div>
           </div>
         </div>
       </div>
-      
+
     </section>
 
     <footer id="contact">
-      <div class="icon-wrap">
-        <h5>contact me</h5>
-        <div class="icons">
-          <p>+91 9342739243</p>
-          <a href="https://github.com/Harits77"><box-icon type='logo' name='github'></box-icon></a>
-          <a href="https://www.linkedin.com/in/ms-hariharan"><box-icon name='linkedin' type='logo'></box-icon></a>
+      <div class="icon-wrap text-center mb-4">
+        <h2 class="text-light fw-bold">Contact Me</h2>
+        <p class="text-light fs-5 mt-4 ">Let's connect! Feel free to drop a message.</p>
+    </div>
+    <form action="https://formspree.io/f/xpwqbaob" method="POST" class="contact-form bg-black">
+        <div class="mb-4">
+            <label for="name" class="form-label text-light">Your Name</label>
+            <input type="text" class="form-control custom-input" id="name" name="name" placeholder="Enter Your Name" required>
         </div>
-      </div>
+        <div class="mb-4">
+            <label for="email" class="form-label text-light">Your Email</label>
+            <input type="email" class="form-control custom-input" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="form-label text-light">Your Message</label>
+            <textarea class="form-control custom-input" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
     </footer>
 
 </body>
@@ -288,6 +303,25 @@
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    const form = event.target;
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        alert("Your message has been sent successfully! ✅");
+        form.reset();
+      } else {
+        alert("Oops! Something went wrong. Try again.");
+      }
+    });
+  });
+</script>
+
 <script>
 
   document.addEventListener("DOMContentLoaded", function () {
